@@ -19,3 +19,9 @@ gulp.task('test', function (cb) {
     .pipe(mocha())
     .on('end', cb);
 });
+
+gulp.task('alt-test', function (cb) {
+  gulp.src(['./test/get-core/alt-get.js'])
+    .pipe(mocha())
+    .on('end', cb);
+});
